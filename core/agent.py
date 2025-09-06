@@ -31,7 +31,7 @@ class ResearchAgent:
         ])
 
         agent = create_openai_tools_agent(self.llm, self.tools, prompt)
-        self.agent_executor = AgentExecutor(agent=agent, tools=self.tools, verbose=True) # verbose=True lets us see the agent's thoughts
+        self.agent_executor = AgentExecutor(agent=agent, tools=self.tools, verbose=False) # verbose=True lets us see the agent's thoughts
 
     def chat(self, user_input: str) -> str:
         """

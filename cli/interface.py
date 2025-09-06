@@ -1,4 +1,5 @@
 from rich.console import Console
+from rich.markdown import Markdown
 from rich.prompt import Prompt
 from langchain_core.messages import HumanMessage
 from datetime import datetime
@@ -109,5 +110,7 @@ Please acknowledge you have read it, then await my specific questions about it.
         else:
             final_answer = raw_response # Fallback for tool calls or other formats
 
-        console.print(f"\n[bold cyan]Agent:[/bold cyan] {final_answer}")
+        console.print("\n[bold cyan]Agent:[/bold cyan]")
+        markdown_output = Markdown(final_answer)
+        console.print(markdown_output)
 
