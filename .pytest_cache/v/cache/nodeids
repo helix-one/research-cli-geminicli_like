@@ -1,0 +1,7 @@
+[
+  "tests/test_file_io.py::test_read_file_not_found",
+  "tests/test_file_io.py::test_write_and_read_file_success",
+  "tests/test_knowledge_base.py::test_debug_fuzzy_score",
+  "tests/test_knowledge_base.py::test_search_knowledge_base_found",
+  "tests/test_knowledge_base.py::test_search_knowledge_base_not_found"
+]

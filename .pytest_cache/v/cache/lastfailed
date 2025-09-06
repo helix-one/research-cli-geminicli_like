@@ -1,0 +1,3 @@
+{
+  "tests/test_knowledge_base.py::test_debug_fuzzy_score": true
+}

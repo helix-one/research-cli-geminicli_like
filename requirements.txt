@@ -1,0 +1,8 @@
+langchain
+langchain-openai
+python-dotenv
+rich
+pytest
+faiss-cpu
+thefuzz
+python-Levenshtein
